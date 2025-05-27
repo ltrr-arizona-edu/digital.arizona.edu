@@ -36,7 +36,7 @@ jobs:
       - name: Get new updates from arizona-bootstrap
         uses: actions/checkout@v3
         with:
-          repository: az-digital/arizona-bootstrap
+          repository: ltrr-arizona-edu/arizona-bootstrap
           path: ${{ env.AZ_BOOTSTRAP_CLONE_DIR }}
           ref: ${{ inputs.sha }}
       - name: Set variables for Docker images
