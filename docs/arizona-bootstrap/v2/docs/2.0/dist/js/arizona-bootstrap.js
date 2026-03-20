@@ -1,5 +1,5 @@
 /*!
-  * Arizona Bootstrap v2.0.28-eta1 (https://github.com/az-digital/arizona-bootstrap)
+  * Arizona Bootstrap v2.0.28-iota2 (https://github.com/az-digital/arizona-bootstrap)
   * Copyright 2026 The Arizona Board of Regents on behalf of The University of Arizona
   * Licensed under MIT (https://github.com/az-digital/arizona-bootstrap/blob/main/LICENSE)
   */
@@ -4715,7 +4715,7 @@
     }
 
     // Private
-    ;
+  ;
     _proto._getConfig = function _getConfig(config) {
       config = _extends({}, Default, config);
       config.toggle = Boolean(config.toggle); // Coerce string values
@@ -4750,7 +4750,7 @@
     }
 
     // Static
-    ;
+  ;
     Offcanvasmenu._getTargetFromElement = function _getTargetFromElement(element) {
       var selector = Util.getSelectorFromElement(element);
       return selector ? document.querySelector(selector) : null;
