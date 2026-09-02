@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.">
 <meta name="author" content="Arizona Digital contributors">
-<meta name="generator" content="Hugo 0.152.2">
+<meta name="generator" content="Hugo 0.164.0">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.2">
@@ -16,7 +16,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
 <link href="https://cdn.digital.arizona.edu/lib/az-icons/main/az-icons-styles.css" rel="stylesheet">
-<link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
+
+<link href="https://use.typekit.net/sgx0zzg.css" rel="stylesheet" crossorigin="anonymous">
 <link href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/dist/css/arizona-bootstrap.min.css" rel="stylesheet"><link href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/assets/css/docs.css" rel="stylesheet">
 
 <link rel="apple-touch-icon" href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -374,6 +375,7 @@
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/placeholders/" class="bd-links-link d-inline-block rounded">Placeholders</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/popovers/" class="bd-links-link d-inline-block rounded">Popovers</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/progress/" class="bd-links-link d-inline-block rounded">Progress</a></li>
+            <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/search/" class="bd-links-link d-inline-block rounded">Search</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/scrollspy/" class="bd-links-link d-inline-block rounded">Scrollspy</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/spinners/" class="bd-links-link d-inline-block rounded">Spinners</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/toasts/" class="bd-links-link d-inline-block rounded">Toasts</a></li>
@@ -476,7 +478,7 @@
     <main class="bd-main order-1">
       <div class="bd-intro pt-2 ps-lg-2">
         <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
-          <div class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha0/site/content/docs/5.2/content/typography.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">
+          <div class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha/site/content/docs/5.2/content/typography.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">
                 View on GitHub
               </a></div>
           <h1 class="bd-title mb-0" id="content">Typography</h1>
@@ -498,6 +500,9 @@
     <li><a href="#global-settings">Global settings</a></li>
     <li><a href="#headings">Headings</a>
       <ul>
+        <li><a href="#mixed-headings">Mixed headings</a></li>
+        <li><a href="#serif-headings">Serif headings</a></li>
+        <li><a href="#switching-a-single-headings-font-without-a-wrapper">Switching a single heading&rsquo;s font without a wrapper</a></li>
         <li><a href="#customizing-headings">Customizing headings</a></li>
       </ul>
     </li>
@@ -515,6 +520,11 @@
     <li><a href="#lists">Lists</a>
       <ul>
         <li><a href="#triangles">Triangles</a></li>
+        <li><a href="#focus-points">Focus points</a></li>
+        <li><a href="#checkmarks">Checkmarks</a></li>
+        <li><a href="#dark-backgrounds">Dark backgrounds</a></li>
+        <li><a href="#nested-lists">Nested lists</a></li>
+        <li><a href="#item-spacing">Item spacing</a></li>
         <li><a href="#unstyled">Unstyled</a></li>
         <li><a href="#inline">Inline</a></li>
         <li><a href="#description-list-alignment">Description list alignment</a></li>
@@ -549,38 +559,38 @@
 <h2 id="headings">Headings</h2>
 <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
 <div class="table-responsive"><table class="table">
-  <thead>
-      <tr>
-          <th>Heading</th>
-          <th>Example</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
-          <td><span class="h1 d-inline-block">h1. Bootstrap heading</span></td>
-      </tr>
-      <tr>
-          <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
-          <td><span class="h2 d-inline-block">h2. Bootstrap heading</span></td>
-      </tr>
-      <tr>
-          <td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
-          <td><span class="h3 d-inline-block">h3. Bootstrap heading</span></td>
-      </tr>
-      <tr>
-          <td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
-          <td><span class="h4 d-inline-block">h4. Bootstrap heading</span></td>
-      </tr>
-      <tr>
-          <td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
-          <td><span class="h5 d-inline-block">h5. Bootstrap heading</span></td>
-      </tr>
-      <tr>
-          <td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
-          <td><span class="h6 d-inline-block">h6. Bootstrap heading</span></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Heading</th>
+					<th>Example</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
+					<td><span class="h1 d-inline-block">h1. Bootstrap heading</span></td>
+			</tr>
+			<tr>
+					<td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
+					<td><span class="h2 d-inline-block">h2. Bootstrap heading</span></td>
+			</tr>
+			<tr>
+					<td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
+					<td><span class="h3 d-inline-block">h3. Bootstrap heading</span></td>
+			</tr>
+			<tr>
+					<td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
+					<td><span class="h4 d-inline-block">h4. Bootstrap heading</span></td>
+			</tr>
+			<tr>
+					<td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
+					<td><span class="h5 d-inline-block">h5. Bootstrap heading</span></td>
+			</tr>
+			<tr>
+					<td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
+					<td><span class="h6 d-inline-block">h6. Bootstrap heading</span></td>
+			</tr>
+	</tbody>
 </table></div>
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>h1. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
@@ -613,6 +623,147 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h4&#34;</span><span class="p">&gt;</span>h4. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h5&#34;</span><span class="p">&gt;</span>h5. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h6&#34;</span><span class="p">&gt;</span>h6. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<h3 id="mixed-headings">Mixed headings</h3>
+<p><span class="badge badge-az-custom">Custom Arizona Bootstrap Class</span></p>
+<p>Add the <code>.az-headings-mixed</code> class to a container (such as <code>&lt;body&gt;</code> or any wrapping element) to switch that container&rsquo;s <code>&lt;h1&gt;</code>-<code>&lt;h3&gt;</code> and <code>.h1</code>-<code>.h3</code> to the serif type stack, leaving <code>&lt;h4&gt;</code>-<code>&lt;h6&gt;</code> and <code>.h4</code>-<code>.h6</code> on Proxima Nova.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<div class="az-headings-mixed">
+  <h1>h1. Bootstrap heading</h1>
+  <h2>h2. Bootstrap heading</h2>
+  <h3>h3. Bootstrap heading</h3>
+  <h4>h4. Bootstrap heading</h4>
+  <h5>h5. Bootstrap heading</h5>
+  <h6>h6. Bootstrap heading</h6>
+</div>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-headings-mixed&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>h1. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>h2. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>h3. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>h4. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>h5. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>h6. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<p><code>.h1</code> through <code>.h6</code> classes can also be used in place of the associated HTML element within a container using <code>.az-headings-mixed</code>.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<div class="az-headings-mixed">
+  <p class="h1">h1. Bootstrap heading</p>
+  <p class="h2">h2. Bootstrap heading</p>
+  <p class="h3">h3. Bootstrap heading</p>
+  <p class="h4">h4. Bootstrap heading</p>
+  <p class="h5">h5. Bootstrap heading</p>
+  <p class="h6">h6. Bootstrap heading</p>
+</div>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-headings-mixed&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h1&#34;</span><span class="p">&gt;</span>h1. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h2&#34;</span><span class="p">&gt;</span>h2. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h3&#34;</span><span class="p">&gt;</span>h3. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h4&#34;</span><span class="p">&gt;</span>h4. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h5&#34;</span><span class="p">&gt;</span>h5. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h6&#34;</span><span class="p">&gt;</span>h6. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<h3 id="serif-headings">Serif headings</h3>
+<p><span class="badge badge-az-custom">Custom Arizona Bootstrap Class</span></p>
+<p>Add the <code>.az-headings-serif</code> class to a container (such as <code>&lt;body&gt;</code> or any wrapping element) to switch all of that container&rsquo;s <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> and <code>.h1</code>-<code>.h6</code> to the serif type stack.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<div class="az-headings-serif">
+  <h1>h1. Bootstrap heading</h1>
+  <h2>h2. Bootstrap heading</h2>
+  <h3>h3. Bootstrap heading</h3>
+  <h4>h4. Bootstrap heading</h4>
+  <h5>h5. Bootstrap heading</h5>
+  <h6>h6. Bootstrap heading</h6>
+</div>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-headings-serif&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>h1. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>h2. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>h3. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>h4. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>h5. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>h6. Bootstrap heading<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<p><code>.h1</code> through <code>.h6</code> classes can also be used in place of the associated HTML element within a container using <code>.az-headings-serif</code>.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<div class="az-headings-serif">
+  <p class="h1">h1. Bootstrap heading</p>
+  <p class="h2">h2. Bootstrap heading</p>
+  <p class="h3">h3. Bootstrap heading</p>
+  <p class="h4">h4. Bootstrap heading</p>
+  <p class="h5">h5. Bootstrap heading</p>
+  <p class="h6">h6. Bootstrap heading</p>
+</div>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-headings-serif&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h1&#34;</span><span class="p">&gt;</span>h1. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h2&#34;</span><span class="p">&gt;</span>h2. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h3&#34;</span><span class="p">&gt;</span>h3. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h4&#34;</span><span class="p">&gt;</span>h4. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h5&#34;</span><span class="p">&gt;</span>h5. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;h6&#34;</span><span class="p">&gt;</span>h6. Bootstrap heading<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<h3 id="switching-a-single-headings-font-without-a-wrapper">Switching a single heading&rsquo;s font without a wrapper</h3>
+<p>Heading font-family reads a shared <code>--az-heading-font-family</code> custom property — the same one <code>.az-headings-serif</code> sets on a container and <code>.az-headings-mixed</code> sets on its <code>h1</code>–<code>h3</code>/<code>.h1</code>–<code>.h3</code> descendants above. Setting it directly on one heading works the same way, for a one-off case that doesn&rsquo;t need a wrapping element or a new utility class.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<h2 style="--az-heading-font-family: garamond-premier-pro, Georgia, 'Times New Roman', serif;">h2. Just this heading, in serif</h2>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;--az-heading-font-family: garamond-premier-pro, Georgia, &#39;Times New Roman&#39;, serif;&#34;</span><span class="p">&gt;</span>h2. Just this heading, in serif<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span></span></span></code></pre></div>
 </div>
 
 <h3 id="customizing-headings">Customizing headings</h3>
@@ -658,7 +809,7 @@
 <p>Display headings are customizable via two variables, <code>$display-font-family</code> and <code>$display-font-style</code>.</p>
 <div class="bd-example-snippet bd-code-snippet bd-file-ref">
     <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha0/scss/_variables.scss">scss/_variables.scss</a>
+      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha/scss/_variables.scss">scss/_variables.scss</a>
       <div class="d-flex ms-auto">
         <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
           <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
@@ -910,6 +1061,163 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div>
 </div>
 
+<h3 id="focus-points">Focus points</h3>
+<p><span class="badge badge-az-custom">Custom Arizona Bootstrap Class</span></p>
+<p>Add the <code>.az-list-focus-points</code> class to your <strong>unordered list</strong> to replace the default bullets with focus points. Focus point list items function the same as an unordered list.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<ul class="az-list-focus-points">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>This is a longer list item that runs past the width of its container and wraps onto a second line, so you can see that the marker stays put on the first line.</li>
+  <li>Here is another long one. However far the text wraps, every line after the first stays lined up with the one above it instead of sliding back under the marker.</li>
+</ul>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-list-focus-points&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Consectetur adipiscing elit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Integer molestie lorem at massa<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is a longer list item that runs past the width of its container and wraps onto a second line, so you can see that the marker stays put on the first line.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Here is another long one. However far the text wraps, every line after the first stays lined up with the one above it instead of sliding back under the marker.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<h3 id="checkmarks">Checkmarks</h3>
+<p><span class="badge badge-az-custom">Custom Arizona Bootstrap Class</span></p>
+<p>Add the <code>.az-list-checkmarks</code> class to your <strong>unordered list</strong> to replace the default bullets with checkmarks. Checkmark list items function the same as an unordered list.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<ul class="az-list-checkmarks">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>This is a longer list item that runs past the width of its container and wraps onto a second line, so you can see that the marker stays put on the first line.</li>
+  <li>Here is another long one. However far the text wraps, every line after the first stays lined up with the one above it instead of sliding back under the marker.</li>
+</ul>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-list-checkmarks&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Consectetur adipiscing elit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Integer molestie lorem at massa<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is a longer list item that runs past the width of its container and wraps onto a second line, so you can see that the marker stays put on the first line.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Here is another long one. However far the text wraps, every line after the first stays lined up with the one above it instead of sliding back under the marker.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<h3 id="dark-backgrounds">Dark backgrounds</h3>
+<p>On a dark <a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/helpers/color-background/"><code>.text-bg-{color}</code> helper</a> the checkmark switches to Sky, because its solid Oasis disc is too dark to read there. The focus point does not change — it keeps its Bloom and Sky on every background.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<div class="text-bg-blue p-4">
+  <ul class="az-list-checkmarks mb-5">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+  </ul>
+  <ul class="az-list-focus-points mb-0">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+  </ul>
+</div>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-bg-blue p-4&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-list-checkmarks mb-5&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Consectetur adipiscing elit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-list-focus-points mb-0&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Consectetur adipiscing elit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<h3 id="nested-lists">Nested lists</h3>
+<p>Nested lists inherit the marker and run tighter — 14px between items instead of 24px.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<ul class="az-list-checkmarks">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit, with a nested list:
+    <ul>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit</li>
+    </ul>
+  </li>
+  <li>Vestibulum ante ipsum primis</li>
+</ul>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-list-checkmarks&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Consectetur adipiscing elit, with a nested list:
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Integer molestie lorem at massa<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Facilisis in pretium nisl aliquet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nulla volutpat aliquam velit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Vestibulum ante ipsum primis<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
+<h3 id="item-spacing">Item spacing</h3>
+<p>The 24px gap between items is part of both styles, so there is nothing to add. If you are writing the markup yourself and want a different gap, override it with the <a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/utilities/spacing/">spacing utilities</a> on the list items.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example m-0 border-0">
+    
+<ul class="az-list-checkmarks">
+  <li class="mb-1">Lorem ipsum dolor sit amet</li>
+  <li class="mb-1">Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+</ul>
+
+  </div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;az-list-checkmarks&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;mb-1&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;mb-1&#34;</span><span class="p">&gt;</span>Consectetur adipiscing elit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Integer molestie lorem at massa<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div>
+</div>
+
 <h3 id="unstyled">Unstyled</h3>
 <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
 <div class="bd-example-snippet bd-code-snippet">
@@ -1048,7 +1356,7 @@
 <p>Headings have some dedicated variables for sizing and spacing.</p>
 <div class="bd-example-snippet bd-code-snippet bd-file-ref">
     <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha0/scss/_variables.scss">scss/_variables.scss</a>
+      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha/scss/_variables.scss">scss/_variables.scss</a>
       <div class="d-flex ms-auto">
         <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
           <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
@@ -1064,7 +1372,7 @@
 <p>Miscellaneous typography elements covered here and in <a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/content/reboot/">Reboot</a> also have dedicated variables.</p>
 <div class="bd-example-snippet bd-code-snippet bd-file-ref">
     <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha0/scss/_variables.scss">scss/_variables.scss</a>
+      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha/scss/_variables.scss">scss/_variables.scss</a>
       <div class="d-flex ms-auto">
         <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
           <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
@@ -1078,9 +1386,9 @@
 </span></span><span class="line"><span class="cl"><span class="nv">$sub-sup-font-size</span><span class="o">:</span>           <span class="mf">.75</span><span class="kt">em</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// fusv-disable
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$text-muted</span><span class="o">:</span>                  <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">secondary-color</span><span class="p">);</span> <span class="c1">// Deprecated in 5.3.0
+</span></span></span><span class="line"><span class="cl"><span class="nv">$text-muted</span><span class="o">:</span>                  <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">secondary-color</span><span class="p">);</span> <span class="c1">// Deprecated in 5.3.0
 </span></span></span><span class="line"><span class="cl"><span class="c1">// fusv-enable
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">$initialism-font-size</span><span class="o">:</span>        <span class="nv">$small-font-size</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">$blockquote-margin-y</span><span class="o">:</span>         <span class="nv">$spacer</span><span class="p">;</span>
@@ -1092,12 +1400,12 @@
 </span></span><span class="line"><span class="cl"><span class="nv">$hr-color</span><span class="o">:</span>                    <span class="ni">inherit</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// fusv-disable
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$hr-bg-color</span><span class="o">:</span>                 <span class="n">null</span><span class="p">;</span> <span class="c1">// Deprecated in v5.2.0
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$hr-height</span><span class="o">:</span>                   <span class="n">null</span><span class="p">;</span> <span class="c1">// Deprecated in v5.2.0
+</span></span></span><span class="line"><span class="cl"><span class="nv">$hr-bg-color</span><span class="o">:</span>                 <span class="n">null</span><span class="p">;</span> <span class="c1">// Deprecated in v5.2.0
+</span></span></span><span class="line"><span class="cl"><span class="nv">$hr-height</span><span class="o">:</span>                   <span class="n">null</span><span class="p">;</span> <span class="c1">// Deprecated in v5.2.0
 </span></span></span><span class="line"><span class="cl"><span class="c1">// fusv-enable
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">$hr-border-color</span><span class="o">:</span>             <span class="n">null</span><span class="p">;</span> <span class="c1">// Allows for inherited colors
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$hr-border-width</span><span class="o">:</span>             <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">border-width</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl"><span class="nv">$hr-border-width</span><span class="o">:</span>             <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">border-width</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$hr-opacity</span><span class="o">:</span>                  <span class="mf">.25</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">$vr-border-width</span><span class="o">:</span>             <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">border-width</span><span class="p">);</span>
@@ -1157,7 +1465,7 @@
           <li class="mb-2">Arizona Bootstrap is &copy; 2025 The Arizona Board of Regents on behalf of <a href="https://www.arizona.edu/">The University of Arizona</a>.</li>
           <li class="mb-2">Designed and built by members of the <a href="https://github.com/orgs/az-digital/people">Arizona Digital team</a>.</li>
           <li class="mb-2">Code licensed <a href="https://github.com/az-digital/arizona-bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
-          <li class="mb-2">Currently v5.2.0-alpha0.</li>
+          <li class="mb-2">Currently v5.2.0-alpha.</li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1 mb-3">

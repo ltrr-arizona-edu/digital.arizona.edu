@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Indicate the current page&rsquo;s location within a navigational hierarchy that automatically adds separators via CSS.">
 <meta name="author" content="Arizona Digital contributors">
-<meta name="generator" content="Hugo 0.152.2">
+<meta name="generator" content="Hugo 0.164.0">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.2">
@@ -16,7 +16,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
 <link href="https://cdn.digital.arizona.edu/lib/az-icons/main/az-icons-styles.css" rel="stylesheet">
-<link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
+
+<link href="https://use.typekit.net/sgx0zzg.css" rel="stylesheet" crossorigin="anonymous">
 <link href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/dist/css/arizona-bootstrap.min.css" rel="stylesheet"><link href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/assets/css/docs.css" rel="stylesheet">
 
 <link rel="apple-touch-icon" href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -374,6 +375,7 @@
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/placeholders/" class="bd-links-link d-inline-block rounded">Placeholders</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/popovers/" class="bd-links-link d-inline-block rounded">Popovers</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/progress/" class="bd-links-link d-inline-block rounded">Progress</a></li>
+            <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/search/" class="bd-links-link d-inline-block rounded">Search</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/scrollspy/" class="bd-links-link d-inline-block rounded">Scrollspy</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/spinners/" class="bd-links-link d-inline-block rounded">Spinners</a></li>
             <li><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/components/toasts/" class="bd-links-link d-inline-block rounded">Toasts</a></li>
@@ -476,7 +478,7 @@
     <main class="bd-main order-1">
       <div class="bd-intro pt-2 ps-lg-2">
         <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
-          <div class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha0/site/content/docs/5.2/components/breadcrumb.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">
+          <div class="mb-3 mb-md-0 d-flex text-nowrap"><a class="btn btn-sm btn-bd-light rounded-2" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha/site/content/docs/5.2/components/breadcrumb.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">
                 View on GitHub
               </a></div>
           <h1 class="bd-title mb-0" id="content">Breadcrumb</h1>
@@ -517,14 +519,7 @@
       <div class="bd-content ps-lg-2">
         
 
-        <div class="alert alert-warning">
-  <h4 class="alert-heading">Heads Up!</h4>
-  <p>This feature in Arizona Bootstrap depends on Material Symbols Rounded icons which will still need to be added to your project if you would like to use them.</p>
-<p><a href="/digital.arizona.edu/arizona-bootstrap/v5/docs/5.2/icons/#material-symbols-implementation">Implement Material Symbols</a></p>
-
-</div>
-
-<h2 id="example">Example</h2>
+        <h2 id="example">Example</h2>
 <p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>
 <div class="bd-example-snippet bd-code-snippet">
   <div class="bd-example m-0 border-0">
@@ -581,7 +576,7 @@
 
 <h3 id="breadcrumb-home">Breadcrumb Home</h3>
 <p><span class="badge badge-az-custom">Custom Arizona Bootstrap Class</span></p>
-<p>Add the custom <code>.breadcrumb-item-home</code> class to an existing <code>breadcrumb-item</code> to change the divider icon to a <span class="material-symbols-rounded fs-6">home</span>.</p>
+<p>Add the custom <code>.breadcrumb-item-home</code> class to an existing <code>breadcrumb-item</code> to change the divider icon to a <svg width="20" height="20" viewBox="0 -960 960 960" fill="#1e5288" style="vertical-align: text-bottom;"><path d="M240-200h133.85v-201.54q0-15.36 10.39-25.76 10.4-10.39 25.76-10.39h140q15.36 0 25.76 10.39 10.39 10.4 10.39 25.76V-200H720v-353.85q0-3.07-1.35-5.57-1.34-2.5-3.65-4.43L487.31-735q-3.08-2.69-7.31-2.69-4.23 0-7.31 2.69L245-563.85q-2.31 1.93-3.65 4.43-1.35 2.5-1.35 5.57V-200Zm-60 0v-353.85q0-17.17 7.68-32.53 7.69-15.37 21.24-25.31l227.7-171.54q18.95-14.46 43.32-14.46t43.44 14.46l227.7 171.54q13.55 9.94 21.24 25.31 7.68 15.36 7.68 32.53V-200q0 24.54-17.73 42.27Q744.54-140 720-140H562.31q-15.37 0-25.76-10.4-10.4-10.39-10.4-25.76v-201.53h-92.3v201.53q0 15.37-10.4 25.76-10.39 10.4-25.76 10.4H240q-24.54 0-42.27-17.73Q180-175.46 180-200Zm300-269.23Z"></path></svg>.</p>
 <h2 id="dividers">Dividers</h2>
 <p>Dividers are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code>::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code>content</code></a>. They can be changed by modifying a local CSS custom property <code>--bs-breadcrumb-divider</code>, or through the <code>$breadcrumb-divider</code> Sass variable — and <code>$breadcrumb-divider-flipped</code> for its RTL counterpart, if needed. We default to our Sass variable, which is set as a fallback to the custom property. This way, you get a global divider that you can override without recompiling CSS at any time.</p>
 <div class="bd-example-snippet bd-code-snippet">
@@ -679,7 +674,7 @@
 <p>As part of Bootstrap&rsquo;s evolving CSS variables approach, breadcrumbs now use local CSS variables on <code>.breadcrumb</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
 <div class="bd-example-snippet bd-code-snippet bd-file-ref">
     <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha0/scss/_breadcrumb.scss">scss/_breadcrumb.scss</a>
+      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha/scss/_breadcrumb.scss">scss/_breadcrumb.scss</a>
       <div class="d-flex ms-auto">
         <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
           <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
@@ -697,7 +692,7 @@
 <h3 id="sass-variables">Sass variables</h3>
 <div class="bd-example-snippet bd-code-snippet bd-file-ref">
     <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha0/scss/_variables.scss">scss/_variables.scss</a>
+      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small" href="https://github.com/az-digital/arizona-bootstrap/blob/v5.2.0-alpha/scss/_variables.scss">scss/_variables.scss</a>
       <div class="d-flex ms-auto">
         <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
           <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
@@ -756,7 +751,7 @@
           <li class="mb-2">Arizona Bootstrap is &copy; 2025 The Arizona Board of Regents on behalf of <a href="https://www.arizona.edu/">The University of Arizona</a>.</li>
           <li class="mb-2">Designed and built by members of the <a href="https://github.com/orgs/az-digital/people">Arizona Digital team</a>.</li>
           <li class="mb-2">Code licensed <a href="https://github.com/az-digital/arizona-bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
-          <li class="mb-2">Currently v5.2.0-alpha0.</li>
+          <li class="mb-2">Currently v5.2.0-alpha.</li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1 mb-3">
